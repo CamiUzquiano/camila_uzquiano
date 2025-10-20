@@ -42,10 +42,10 @@ body {
 
 /* CONTENEDOR GENERAL */
 .contenedor {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 10px; 
 }
 
 /* HEADER */
@@ -53,7 +53,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px 10px;
     border-bottom: 3px solid var(--celeste-fuerte);
 }
 
@@ -88,6 +88,7 @@ nav ul li a:hover {
 main {
     text-align: center;
     margin-top: 40px;
+    padding: 0 10px; 
 }
 
 main h1 {
@@ -343,6 +344,44 @@ blockquote {
 
 .carrusel-track img {
     flex: 0 0 auto;
+}
+
+/* MI REFUFIO */ 
+.refugio { 
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    background-color: var(--beige); 
+    border-radius: 20px; 
+    padding: 30px; 
+    margin: 30px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+} 
+.refugio:hover { 
+    transform: translateY(-5px); 
+} 
+.refugio img { 
+    width: 40%; 
+    max-width: 200px; 
+    border-radius: 15px; 
+    object-fit: cover; 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15); 
+} 
+.refugio h2 { 
+    font-family: "Bebas Neue"; 
+    font-size: var(--h3); 
+    color: var(--cafecito); 
+    margin-bottom: 10px; 
+} 
+.refugio p { 
+        font-size: var(--p); 
+        color: var(--neutro); 
+        line-height: 1.6; 
+} 
+.refugio:nth-child(even) { 
+    flex-direction: row-reverse; 
+    background-color: var(--celeste-cielo); 
 }
 
 /* APRENDER A VIVIR*/
