@@ -261,6 +261,85 @@ blockquote {
     background: linear-gradient(to bottom right, #d2b8aa, #f0d2b2);
 }
 
+/* MI CONSTELACION */
+.constelacion {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--celeste-cielo);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    color: #333;
+    font-size: var(--p);
+    line-height: 1.8;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+}
+
+.constelacion p {
+    margin-bottom: 20px;
+}
+
+.constelacion p::first-letter {
+    font-size: 1.5em;
+    color: var(--naranja-amarillo);
+    font-weight: bold;
+}
+
+.constelacion::before {
+    font-size: 60px;
+    color: var(--beige);
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.constelacion::after {
+    font-size: 60px;
+    color: var(--naranja-amarillo);
+    opacity: 0.2;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+/* CARRUSEL DE IMÁGENES */
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+    margin: 60px auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.carrusel img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+/* CONTENEDOR DE LAS IMÁGENES */
+.carrusel-track {
+    display: flex;
+    gap: 20px;
+    animation: mover 10s linear infinite;
+}
+
+/* ANIMACIÓN DE MOVIMIENTO */
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.carrusel-track img {
+    flex: 0 0 auto;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
