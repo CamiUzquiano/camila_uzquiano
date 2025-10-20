@@ -97,6 +97,13 @@ main h1 {
     margin-bottom: 15px;
 }
 
+main h3 {
+    font-size: var(--h5);
+    color: var(--neutro);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 main img {
     width: 100%;
     max-width: 600px;
@@ -202,6 +209,56 @@ blockquote {
 .historia:nth-child(even) {
     flex-direction: row-reverse;
     background-color: var(--celeste-cielo);
+}
+
+/* UN DIA CONMIGO */
+.pasos {
+    background-color: var(--celeste-cielo);
+    border-left: 8px solid var(--cafecito);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pasos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* TITULOS DE CADA RUTINA */
+.pasos h2 {
+    font-family: "Bebas Neue";
+    font-size: var(--h4);
+    color: var(--cafecito);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* PARRAFOS */
+.pasos p {
+    color: #333;
+    font-size: var(--p);
+    line-height: 1.7;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.pasos p::before {
+    content: "✦ ";
+    color: var(--naranja-amarillo);
+}
+
+.pasos:nth-child(1) {
+    background: linear-gradient(to bottom right, #cbe4e6, var(--celeste-cielo));
+}
+
+.pasos:nth-child(2) {
+    background: linear-gradient(to bottom right, #f7e4b4, var(--beige));
+}
+
+.pasos:nth-child(3) {
+    background: linear-gradient(to bottom right, #d2b8aa, #f0d2b2);
 }
 
 /* FOOTER */
