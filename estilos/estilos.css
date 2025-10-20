@@ -162,6 +162,48 @@ blockquote {
     text-decoration: underline;
 }
 
+/* MI ORIGEN */
+.historia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--beige);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.historia:hover {
+    transform: translateY(-5px);
+}
+
+.historia img {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.historia h2 {
+    font-family: "Bebas Neue";
+    font-size: var(--h3);
+    color: var(--cafecito);
+    margin-bottom: 10px;
+}
+
+.historia p {
+    font-size: var(--p);
+    color: #3b3b3b;
+    line-height: 1.6;
+}
+
+.historia:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: var(--celeste-cielo);
+}
+
 /* FOOTER */
 footer {
     text-align: center;
