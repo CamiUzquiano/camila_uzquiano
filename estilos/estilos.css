@@ -11,7 +11,7 @@
     --celeste-cielo: #B2CBCF;
     --celeste-fuerte: #7ECACF;
     --gris-azulito: #f8f9fa;
-    --neutro: #000;
+    --neutro: #333;
 
     /* Escala tipográfica */
     --h1: 47.78px;
@@ -35,7 +35,7 @@
 /* CUERPO */
 body {
     background-color: var(--gris-azulito);
-    color: #333;
+    color: var(--neutro);
     font-family: "Sour Gummy", sans-serif;
     line-height: 1.6;
 }
@@ -73,7 +73,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #333;
+    color: var(--neutro);
     text-decoration: none;
     font-size: var(--p);
     font-weight: 500;
@@ -169,7 +169,7 @@ blockquote {
 
 .card p {
     font-size: var(--p);
-    color: #333;
+    color: var(--neutro);
     line-height: 1.6;
     text-align: justify;
 }
@@ -207,7 +207,7 @@ blockquote {
 
 .historia p {
     font-size: var(--p);
-    color: #3b3b3b;
+    color: var(--neutro);
     line-height: 1.6;
 }
 
@@ -243,7 +243,7 @@ blockquote {
 
 /* PARRAFOS */
 .pasos p {
-    color: #333;
+    color: var(--neutro);
     font-size: var(--p);
     line-height: 1.7;
     margin-bottom: 10px;
@@ -274,7 +274,7 @@ blockquote {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    color: #333;
+    color: var(--neutro);
     font-size: var(--p);
     line-height: 1.8;
     text-align: justify;
@@ -345,6 +345,49 @@ blockquote {
     flex: 0 0 auto;
 }
 
+/* APRENDER A VIVIR*/
+.consejo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--beige);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.consejo:hover {
+    transform: translateY(-5px);
+}
+
+.consejo img {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.consejo h2 {
+    font-family: "Bebas Neue";
+    font-size: var(--h3);
+    color: var(--cafecito);
+    margin-bottom: 10px;
+}
+
+.consejo p {
+    font-size: var(--p);
+    color: var(--neutro);
+    line-height: 1.6;
+}
+
+.consejo:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: var(--celeste-cielo);
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -379,5 +422,5 @@ footer a:hover {
 
 footer p {
     font-size: var(--small);
-    color: #555;
+    color: var(--neutro);
 }
