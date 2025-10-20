@@ -1,45 +1,200 @@
-/*Importación de las fuentes a utilizar en este sitio web*/
+/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    /*VARIABLES DE COLOR*/
+/* VARIABLES */
+:root {
+    /* Colores */
     --cafecito: #CD7520;
     --naranja-amarillo: #FFA947;
     --beige: #F4CE81;
     --celeste-cielo: #B2CBCF;
     --celeste-fuerte: #7ECACF;
-    /*ESPACIADORES*/
-    --padding-1: 14px;
-    --padding-2: 42px;
-    --gap-1: 10px;
-    /*ESCALA TIPOGRAFICA*/
+    --gris-azulito: #f8f9fa;
+    --neutro: #000;
+
+    /* Escala tipográfica */
     --h1: 47.78px;
     --h2: 39.81px;
     --h3: 33.18px;
     --h4: 27.65px;
     --h5: 23.04px;
-    --h6: 19.2px;
+    --h6: 19.2px; 
     --p: 16px;
     --small: 13.33px;
     --xsmall: 11.11px;
 }
 
-/*RESETEO: */
-*{
+/* RESETEO */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Este es un selector de una etiqueta: */
-body{
-    background-color: var(--gris-azulito); /* "var(--)" de esta forma llamamos a una variable en este caso de color*/
+/* CUERPO */
+body {
+    background-color: var(--gris-azulito);
+    color: #333;
     font-family: "Sour Gummy", sans-serif;
+    line-height: 1.6;
 }
 
-h1{
+/* CONTENEDOR GENERAL */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 3px solid var(--celeste-fuerte);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--cafecito);
     font-family: "Bebas Neue";
     font-size: var(--h1);
-    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: var(--p);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--cafecito);
+}
+
+/* MAIN */
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+main h1 {
+    color: var(--cafecito);
+    font-family: "Bebas Neue";
+    font-size: var(--h2);
+    margin-bottom: 15px;
+}
+
+main img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--neutro);
+    background-color: var(--beige);
+    padding: 15px;
+    border-left: 5px solid var(--cafecito);
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+/* TARJETAS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--celeste-cielo);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: var(--cafecito);
+    font-family: "Bebas Neue";
+    font-size: var(--h5);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: var(--p);
+    color: #333;
+}
+
+.cards a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    border-top: 3px solid var(--celeste-fuerte);
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+footer h3 {
+    color: var(--cafecito);
+    font-family: "Bebas Neue";
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: var(--naranja-amarillo);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--cafecito);
+}
+
+footer p {
+    font-size: var(--small);
+    color: #555;
 }
